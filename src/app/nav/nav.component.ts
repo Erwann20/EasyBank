@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef  } from '@angular/core';
 
 @Component({
   selector: 'app-nav',
@@ -6,10 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nav.component.sass']
 })
 export class NavComponent implements OnInit {
+  @ViewChild('navBurger') navBurger: ElementRef;
+  @ViewChild('navMenu') navMenu: ElementRef;
 
   constructor() { }
 
   ngOnInit(): void {
   }
+
+  toggleNavbar() {
+    this.navBurger.nativeElement.classList.toggle('is-active');
+    this.navMenu.nativeElement.classList.toggle('is-active');
+}
 
 }
