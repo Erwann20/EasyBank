@@ -121,6 +121,9 @@
               "devServerTarget": "easybank:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@zeit/ng-deploy:deploy"
         }
       }
     }
