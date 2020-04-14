@@ -1,26 +1,41 @@
 
 .hero
-    padding-bottom: 15rem
+   
+    padding-bottom: 20rem
+    padding-top: 20rem
 
-.hero-body .container
-    margin-top: 5rem
+.hero-body
+    width: 37rem
+    padding-right: -20rem
     margin-left: 7rem
+
     
+    
+.div-img
+    background-color: #f4f5f7
 
 .hero-body .title
-    font-size: 3rem
-    margin-bottom: 3rem
+    
+    font-size: 4rem
+    margin-bottom: 3.5rem
     
 .hero-body .subtitle
-    width: 30rem
+    width: 37rem
+    font-size: 1.5rem
+    margin-bottom: 3rem
 
 .bg-intro
-    margin-top: -59rem
-    margin-left: 43rem
+    // display: none
+    width: 2000px
+    height: 1576px
+    margin-top: -92rem
+    margin-left: 40rem
 
 .image-mockup
-    margin-top: -60rem
-    margin-left: 55.3rem
+    width: 62%
+    margin-top: -72%
+    margin-left: 58rem
+   
 
 .bg-introMobile
     display: none
@@ -29,10 +44,16 @@
 
 //Mobile 
 @media (max-width: 640px) 
+    .hero 
+        margin-top: -20rem
     .bg-intro 
         display: none
     .image-mockup
         display: none
+
+    .hero-body
+        width: 10rem
+    
 
     .hero-body .title
         text-align: center
@@ -50,10 +71,12 @@
     .bg-introMobile
         display: inline
         width: 105rem
-        margin-left: 0.05rem
+        margin-left: 0.02rem
 
     .image-mockupMobile
         display: inline
-        margin-top: -100rem
+        width: 800px
+        margin-top: -80rem
+       
     app-button
         margin-left: -1rem
